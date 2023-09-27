@@ -1,0 +1,37 @@
+@import "../../App.scss";
+
+.Contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+
+    &__container{
+    background: $black-color;
+    background-image: url(../../assets/img/background.png);
+    border-radius: 12px;
+    height: 100%;
+    width: 100%;
+    height: fit-content;
+
+    h1{
+        color: $background-color;
+        font-size: 40px;
+    }
+    }
+
+    &__links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.icon{
+    transition: transform 0.2s ease !important;
+}
+.icon:hover {
+    cursor: pointer;
+    transform: scale(1.05); 
+
+}

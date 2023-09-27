@@ -1,0 +1,287 @@
+@import "../../App.scss";
+
+.Portfolio{
+    img{
+        height:310px;
+        border-radius:20px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+        @media(max-width:570px){
+            height:190px;
+        }
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+
+    &__container{
+    border-radius: 12px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    height: fit-content;
+    width: 1240px;
+    }
+
+    &__content{
+        padding: 50px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 12px;
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+
+        @media(max-width:415px){
+            text-align: center;
+
+           
+        }
+
+        h1{
+            margin-bottom: 50px;
+            font-size: 45px;
+            
+        }
+
+        &__box{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap:30px;
+
+            @media(max-width:1200px){
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                gap:50px;
+            }
+
+            div{
+                border-radius: 20px;
+                background:#e6ddcf;
+                background-image: url(../../assets/img/background.png);
+                padding:20px;
+            }
+
+           
+
+            &__card1{
+                position: relative;
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(0.95); /* Zoom in by 10% (adjust as needed) */
+                }
+
+                span{
+                    position: absolute; 
+                    bottom: 0; 
+                    right: 0; 
+                    height: 60px; 
+                    background-color: #e6ddcf;
+                    background-image: url(../../assets/img/background.png);
+                    border-radius: 10px;
+                    width: 180px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 20px;
+                    font-family: $title-font;
+                }
+
+                
+
+                &__capa{
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    bottom: 0;
+                    right: 0;
+                    width:100%;
+                    height:100%;
+                    background: $background-color;
+                    transition: all 200ms ease-out;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    opacity: 0;
+                    visibility: hidden;
+                    h1{
+                        margin-bottom: 20px;
+                    }
+                    
+                    button{
+                        font-size: 22px;
+                        background: $clay-color;
+                        background-image: url(../../assets/img/background.png);
+                        padding:15px 20px;
+                        font-family: $title-font;
+                        border: none;
+                        border-radius: 12px;
+                    }
+                }
+
+                &:hover &__capa{
+                    cursor: pointer;
+                    opacity:0.96 !important;
+                    visibility: visible !important;
+                }
+            }
+
+            
+
+            &__card2{
+                position: relative;
+                grid-row-start: 1;
+                grid-row-end: 3;
+                grid-column-start: 2;
+                grid-column-end: 2;
+                justify-self: center;
+                align-self: center;
+                transition: transform 0.3s ease;
+
+                
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(0.95); 
+                }
+
+                @media(max-width:1200px){
+                    grid-row-start: auto;
+                    grid-row-end: auto;
+                    grid-column-start: auto;
+                    grid-column-end: auto;
+                    justify-self: center;
+                    align-self: center;
+                }
+
+                
+
+                span{
+                    position: absolute; 
+                    bottom: 0; 
+                    right: 0; 
+                    height: 60px; 
+                    background-color: #e6ddcf;
+                    background-image: url(../../assets/img/background.png);
+                    border-radius: 10px;
+                    width: 180px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 20px;
+                    font-family: $title-font;
+                }
+
+                &__capa{
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    bottom: 0;
+                    right: 0;
+                    width:100%;
+                    height:100%;
+                    background: $background-color;
+                    transition: all 200ms ease-out;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    opacity: 1;
+                    visibility: hidden;
+                    h1{
+                        margin-bottom: 20px;
+                    }
+                    
+                    button{
+                        font-size: 22px;
+                        background: $clay-color;
+                        background-image: url(../../assets/img/background.png);
+                        padding:15px 20px;
+                        font-family: $title-font;
+                        border: none;
+                        border-radius: 12px;
+                    }
+                }
+                &:hover &__capa{
+                    cursor: pointer;
+                    opacity:0.96 !important;
+                    visibility: visible !important;
+                }
+            }
+
+            
+            &__card3{
+                position: relative;
+                transition: transform 0.3s ease;
+
+                
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(0.95); 
+                }
+
+                span{
+                    position: absolute; 
+                    bottom: 0; 
+                    right: 0; 
+                    height: 60px; 
+                    background-color: #e6ddcf;
+                    background-image: url(../../assets/img/background.png);
+                    border-radius: 10px;
+                    width: 180px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    font-size: 20px;
+                    font-family: $title-font;
+                }
+
+                &__capa{
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    bottom: 0;
+                    right: 0;
+                    width:100%;
+                    height:100%;
+                    background: $background-color;
+                    transition: all 200ms ease-out;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    opacity: 0;
+                    visibility: hidden;
+                    h1{
+                        margin-bottom: 20px;
+                    }
+                    
+                    button{
+                        font-size: 22px;
+                        background: $clay-color;
+                        background-image: url(../../assets/img/background.png);
+                        padding:15px 20px;
+                        font-family: $title-font;
+                        border: none;
+                        border-radius: 12px;
+                    }
+                    
+                }
+                &:hover &__capa{
+                    cursor: pointer;
+                    opacity:0.96 !important;
+                    visibility: visible !important;
+                }
+            }
+        }
+    }
+}

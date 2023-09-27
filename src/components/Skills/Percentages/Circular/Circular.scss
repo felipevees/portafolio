@@ -1,0 +1,111 @@
+@import "../../../../App.scss";
+
+.Circular{
+    width:50%;
+    height: 190px; //170px
+    position: relative;
+    padding-top:15px;
+
+    @media(max-width:768px){
+        left:0;
+    }
+
+    svg{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%) rotate(-90deg);
+        width: 140px;
+        height:180px;
+    }
+
+    &__progress-line{
+        stroke-width: 13;
+        stroke:$black-color;
+        fill:transparent;
+        stroke-dasharray:502;
+        stroke-dashoffset:502;
+        stroke-linecap:round;
+        animation: animate_bar 1s linear forwards;
+    }
+
+    @keyframes animate_bar{
+        100%{
+            stroke-dashoffset: -1;
+        }
+    }
+
+    &__path{
+        stroke-width:13;
+        stroke:$clay-color;
+        fill: transparent;
+        stroke-dasharray: 502;
+        stroke-dashoffset: 502;
+        stroke-linecap: round;
+    }
+    .django{
+        animation: django 1s 1s linear forwards;
+    }
+    .react{
+        animation: react 1s 1s linear forwards;
+    }
+    .htmlcss{
+        animation: htmlcss 1s 1s linear forwards; 
+    }
+    .sql{
+        animation: sql 1s 1s linear forwards; 
+    }
+    .git{
+        animation: git 1s 1s linear forwards; 
+    }
+    .javascript{
+        animation: git 1s 1s linear forwards; 
+    }
+     
+    @keyframes django {
+        100%{
+            stroke-dashoffset: 125;
+        }
+    }
+
+    @keyframes react {
+        100%{
+            stroke-dashoffset: 90;
+        }
+    }
+
+    @keyframes htmlcss {
+        100%{
+            stroke-dashoffset: 90;
+        }
+    }
+
+    @keyframes sql {
+        100%{
+            stroke-dashoffset: 125;
+        }
+    }
+
+    @keyframes git {
+        100%{
+            stroke-dashoffset: 105;
+        }
+    }
+    @keyframes javascript {
+        100%{
+            stroke-dashoffset: 105;
+        }
+    }
+
+&__percentage{
+    position: absolute;
+    color: $background-color;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 19px; 
+    font-weight: 500;
+    animation: showText 0.5 1s linear forwards;
+}
+    
+}

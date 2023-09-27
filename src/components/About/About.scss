@@ -1,0 +1,152 @@
+@import "../../App.scss";
+
+.About{
+    align-items: center;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+
+    &__top{
+        width: 100%;
+        height: 50px;
+        
+        @media(max-width:1150px){
+            height:20px;
+        }
+        @media(max-width:470px){
+            height:10px;
+        }
+
+        img{
+            width: 100%;
+
+            
+        }
+    }
+
+    &__container{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    height: fit-content;
+    
+    @media(max-width:1100px){
+        width:100%;
+    }
+
+    @media(max-width:768px){
+        width:100%;
+        h1{
+            font-size: 45px;
+        }
+        p{
+            font-size: 18px !important;
+        }
+    }
+    }
+
+    &__content{
+      padding: 30px 20px;
+      padding-bottom: 40px;
+      align-items: center;
+      background:#276841;
+      background-image: url(../../assets/img/background.png);
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      width: 100%;
+      opacity: 1;
+
+      
+      @media(max-width:768px) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      
+
+
+      @media(min-width:2560px){
+        div{
+            h1{
+                font-size: 63px;
+            }
+            p{
+                font-size: 25px;
+            }
+        }
+      }
+      
+    }
+    
+
+   
+    &__div1{
+        margin-left: 50px;
+        width:700px;
+        background-size: 332px auto;
+        h1{
+            font-size: 50px;
+        }
+        p{
+            margin-top: 10px;
+            font-size: 20px ;
+        }
+
+        @media(max-width:768px){
+            width:400px;
+            margin-left: 0;
+        }
+        @media(max-width:598px){
+            width:300px;
+            margin-left: 0;
+        }
+        
+    }
+
+    &__separator{
+    position:relative;
+    margin:0 45px;
+    border-radius:10px;
+    width:5px;
+    height:160px;
+    background-color: $black-color;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleY(0);
+    transform-origin:top;
+
+    @media(max-width:768px){
+    margin:45px 0;
+    width:400px;
+    height:5px;
+    transform: scaleX(0);
+    transform-origin:left;
+
+    }
+    @media(max-width:590px){
+        margin:45px 0;
+        width:250px;
+        height:5px;
+        transform: scaleX(0);
+        transform-origin:left;
+    
+        }
+    }
+
+    &__div2{
+        width:200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div{
+            width:150px;
+            img{
+                width: 150px;
+                border-radius: 12px;
+            }
+        }
+    }
+}
+    

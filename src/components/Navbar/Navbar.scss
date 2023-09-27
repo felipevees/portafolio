@@ -1,0 +1,88 @@
+@import "../../App.scss";
+
+.Navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.Navbar-apps {
+  opacity: 1;
+  transform: none;
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  transition: all 0.5s 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  will-change: transform, opacity;
+
+  @media (max-width: 1000px) {
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  a {
+    align-items: center;
+    background-color: $grey2-color;
+    background-image: url('../../assets/img/background.png');
+    border-radius: 12px;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0 14px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    img {
+      overflow: hidden;
+      height: 60px;
+      width: auto;
+      box-sizing: inherit;
+    }
+
+    &:hover {
+      transform: scale(1.08);
+    }
+  }
+}
+
+.Navbar-sections {
+  opacity: 1;
+  transform: none;
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  transition: all 0.5s 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  will-change: transform, opacity;
+  flex-wrap: wrap;
+
+  a {
+    font-family: $title-font;
+    font-size: 27px;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    padding: 0 40px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: calc(20% - 20px);
+
+    &:hover {
+        transform: scale(1.08);
+      }
+
+    @media (max-width: 768px) {
+      font-size: 25px; 
+      width: calc(32% - 10px);
+    }
+
+    @media (max-width: 480px) {
+      font-size: 23px; 
+      width: 32% -10px;
+    }
+  }
+}

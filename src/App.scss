@@ -1,0 +1,57 @@
+$background-color: #fef9f1;
+$blue-color:#3d405b;
+$clay-color:#e07a5f;
+$black-color:#231f20;
+$yellow-color:#f3d3a0;
+$green-color:#81b29a;
+$rose-color:#e3d4d0;
+$grey-color:#f7f1e7;
+$grey2-color:#f3ece6;
+
+$title-font:"Francois One", sans-serif;
+$text-font:"Montserrat";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  body {
+    background-color: $background-color !important;
+    background-image: url('./assets/img/background.png'); 
+    background-repeat: repeat; 
+    background-size: auto; 
+  }
+  h1{
+    font-family: $title-font;
+    font-size: 60px;
+  }
+
+  a{
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+  //hover effect para botones de WebLayout
+
+  .btn{
+    font-size: 28px !important;
+    font-family: $title-font !important;
+    background: #e6ddcf !important;
+    border-radius: 12px !important;
+    background-image: url(./assets/img/background.png) !important;
+    transition: transform 0.2s ease !important;
+  }
+
+  .btn:hover {
+      cursor: pointer;
+      transform: scale(1.05); 
+  
+  }
+
+  .img{
+    background: $background-color !important;
+    background-image: url(./assets/img/background.png) !important;
+  }
