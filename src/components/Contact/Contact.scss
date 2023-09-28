@@ -18,20 +18,35 @@
         color: $background-color;
         font-size: 40px;
     }
+
+    @media(max-width:440px){
+        h1{
+            font-size: 30px;
+        }
+    }
     }
 
-    &__links{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+   
 }
 
 .icon{
     transition: transform 0.2s ease !important;
+    @media(max-width:576px){
+        height:70px;
+    }
 }
 .icon:hover {
     cursor: pointer;
     transform: scale(1.05); 
 
+}
+
+.row>* {
+    @media(max-width:576px){
+
+    
+    flex-shrink: 0;
+    width: 50% !important;
+    max-width: 100%;
+    }
 }

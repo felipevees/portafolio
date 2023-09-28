@@ -24,7 +24,7 @@
         
     }
     @media(max-width:450px){
-        width:300px;
+        width:390px;
         
     }
     
@@ -61,7 +61,7 @@
               }
               @media (max-width: 450px) {
                 display: flex;
-                flex-direction: column;
+                flex-wrap: wrap !important;
               }
         }
 
@@ -86,6 +86,13 @@
                 img{
                     height: 95px;
                 }
+
+                @media(max-width:450px){
+                    img{
+                        height: 70px;
+
+                    }
+                }
             }
 
             &__skill{
@@ -98,6 +105,11 @@
                     color: $background-color;
                     margin-bottom: -8px;
                 }
+                @media (max-width:450px) {
+                    h1{
+                        font-size: 30px;
+                    }
+                }
             }
         }
         
@@ -106,4 +118,7 @@
 }
 .django{
     height:80px !important;
+    @media(max-width:450px){
+        height:60px !important;
+    }
 }

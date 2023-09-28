@@ -17,6 +17,10 @@
         transform: translate(-50%, -50%) rotate(-90deg);
         width: 140px;
         height:180px;
+        @media(max-width:450px){
+            width:100px;
+            height: 140px;
+        }
     }
 
     &__progress-line{
