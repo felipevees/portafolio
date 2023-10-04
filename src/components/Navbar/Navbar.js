@@ -61,7 +61,9 @@ export function Navbar() {
         )}
       </div>
       <div
-        className={`Navbar-sections ${isButtonVisible && " navbar-collapse"}`}
+        className={`Navbar-sections ${
+          isButtonVisible && "collapse navbar-collapse"
+        }`}
         id="navbarSupportedContent"
       >
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
