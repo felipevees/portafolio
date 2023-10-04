@@ -55,3 +55,21 @@ $text-font:"Montserrat";
     background: $background-color !important;
     background-image: url(./assets/img/background.png) !important;
   }
+
+  .Error404{
+  margin: 0; 
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media(max-width:1345px){
+    padding-top: 200px;
+  }
+  @media(max-width:576px){
+    padding-top: 100px;
+    img{
+      height:300px
+    }
+  }
+  }

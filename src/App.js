@@ -1,7 +1,7 @@
 import "./App.scss";
 import { Routes, Route } from "react-router-dom";
 import { MainLayout, WebPageLayout } from "./Layouts";
-import { Home, WebPage } from "./pages";
+import { Home, WebPage, Error404 } from "./pages";
 
 function App() {
   return (
@@ -37,6 +37,14 @@ function App() {
             <WebPageLayout>
               <WebPage />
             </WebPageLayout>
+          }
+        />
+        <Route
+          path="*"
+          element={
+            <MainLayout>
+              <Error404 />
+            </MainLayout>
           }
         />
       </Routes>

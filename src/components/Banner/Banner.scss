@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding-top:200px;
 
   div {
     display: flex;
@@ -153,7 +154,7 @@
           justify-content: space-between;
 
           @media(max-width:768px){
-            height:46px;
+            height:40px !important;
           }
           @media(max-width:440px){
             height:40px !important;
@@ -362,6 +363,7 @@
   @media(max-width:1100px){
     flex-direction: column; 
     text-align: center;
+    padding-top: 230px;
     
     &__div {
       text-align: center; 
@@ -375,6 +377,9 @@
         margin-bottom: 20px;
       }
     }
+  }
+  @media(max-width:576px){
+    padding-top: 260px;
   }
   @media (max-width: 768px) {
      
