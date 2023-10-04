@@ -16,7 +16,11 @@ export function Contact() {
         <div className="Contact__container__links row mb-5">
           <div className="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6 mb-4">
             <figure>
-              <a href="https://wa.me/573172821594" target="_blank">
+              <a
+                href="https://wa.me/573172821594"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img className="icon" src={whatsapp} alt="whatsapp" />
                 <h1>Whatsapp</h1>
               </a>
@@ -32,7 +36,11 @@ export function Contact() {
           </div>
           <div className="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6 mb-4">
             <figure>
-              <a href="https://github.com/felipevees" target="_blank">
+              <a
+                href="https://github.com/felipevees"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img className="icon" src={github} alt="github" />
                 <h1>Github</h1>
               </a>
@@ -43,6 +51,7 @@ export function Contact() {
               <a
                 href="https://www.linkedin.com/in/juan-velasquez-escobar-a9a74123b/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img className="icon" src={linkedin} alt="linkedin" />
                 <h1>Linkedin</h1>
