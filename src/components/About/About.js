@@ -14,10 +14,11 @@ export function About() {
           <div className="About__div1">
             <h1>Sobre mi</h1>
             <p>
-              Soy una persona apasionada por la tecnología y la programación. Mi
-              objetivo principal es adquirir conocimientos y habilidades en
-              todas las áreas relacionadas con la programación, con el fin de
-              convertirme en un profesional versátil y competente.
+              Soy un programador junior apasionado por la tecnologia y la
+              programación. Soy bueno creando paginas web responsivas y utiles.
+              Me emociona trabajar en un equipo en el cual pueda aportar mis
+              conocimientos y aprender nuevas cosas y habilidades para crecer
+              como profesional.
             </p>
           </div>
           <div className="About__separator"></div>
