@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.scss";
 import github from "../../assets/icons/github.png";
 import linkedin from "../../assets/icons/linkedin.png";
-import CV from "../../assets/files/CV.pdf";
+import CV from "../../assets/files/CVESPAÑOL.pdf";
 
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
