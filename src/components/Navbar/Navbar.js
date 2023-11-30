@@ -41,7 +41,7 @@ export function Navbar() {
         <a href="https://github.com/felipevees">
           <img src={github} alt="github" />
         </a>
-        <a href="https://www.linkedin.com/in/juan-velasquez-escobar-a9a74123b/">
+        <a href="www.linkedin.com/in/felipe-velasquez-escobar-a9a74123b">
           <img src={linkedin} alt="linkedin" />
         </a>
         <a href={CV} download>
