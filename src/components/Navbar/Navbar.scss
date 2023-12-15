@@ -89,12 +89,26 @@
     justify-content: center;
     align-items: center;
 
+    @media(max-width:700px){
+      gap:30px
+    }
+    @media(max-width:440px){
+     column-gap: 50px;
+    }
+
     li{
-      padding: 0 40px;
+      padding: 0 30px;
       width: calc(20% - 20px);
       display: flex;
       justify-content: center;
       align-items: center;
+
+      @media(max-width:700px){
+        width: calc(20% - 30px);
+      }
+      @media(max-width:650px){
+        width: calc(30% - 30px);
+      }
     }
   }
 

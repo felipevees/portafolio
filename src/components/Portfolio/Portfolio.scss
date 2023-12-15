@@ -119,13 +119,13 @@
                     
                     button{
                         font-size: 22px;
-                        background: $yellow2-color;
+                        background: #343a00;
                         background-image: url(../../assets/img/background.png);
                         padding:15px 20px;
                         font-family: $title-font;
                         border: none;
                         border-radius: 12px;
-                        color: black;
+                        color: $background-color;
                         transition: transform 0.3s ease;
 
                         &:hover {
@@ -208,13 +208,13 @@
                     
                     button{
                         font-size: 22px;
-                        background: $yellow2-color;
+                        background: #343a00;
                         background-image: url(../../assets/img/background.png);
                         padding:15px 20px;
                         font-family: $title-font;
                         border: none;
                         border-radius: 12px;
-                        color: black;
+                        color: $background-color;
                         transition: transform 0.3s ease;
 
                         &:hover {
@@ -279,13 +279,13 @@
                     
                     button{
                         font-size: 22px;
-                        background: $yellow2-color;
+                        background: #343a00;
                         background-image: url(../../assets/img/background.png);
                         padding:15px 20px;
                         font-family: $title-font;
                         border: none;
                         border-radius: 12px;
-                        color: black;
+                        color: $background-color;
                         transition: transform 0.3s ease;
 
                         &:hover {

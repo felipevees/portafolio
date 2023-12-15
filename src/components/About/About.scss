@@ -51,7 +51,7 @@
       padding: 30px 20px;
       padding-bottom: 40px;
       align-items: center;
-      background:$blue-color;
+      background:#343a00;
       background-image: url(../../assets/img/background.png);
       display: flex;
       height: 100%;
@@ -89,12 +89,12 @@
         background-size: 332px auto;
         h1{
             font-size: 50px;  
-            color: black;      
+            color: #c9b197;      
         }
         p{
             margin-top: 10px;
             font-size: 20px ;
-            color: black;
+            color: #c9b197;
             font-family: $text-font;
         }
 
@@ -139,7 +139,7 @@
     }
 
     &__div2{
-        width:200px;
+        width:300px;
         display: flex;
         justify-content: center;
         align-items: center;

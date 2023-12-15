@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.scss";
 import person from "../../assets/img/persona.jpg";
-import wave2 from "../../assets/img/image7.png";
+import wave2 from "../../assets/img/image9.png";
 
 export function About() {
   return (
@@ -21,7 +21,6 @@ export function About() {
               como profesional.
             </p>
           </div>
-          <div className="About__separator"></div>
           <div className="About__div2">
             <div>
               <img src={person} alt="person" />
