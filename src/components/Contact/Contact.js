@@ -62,7 +62,7 @@ export function Contact() {
       </div>
       <footer class="mt-auto mb-4">
         <div class="text-center">
-          <span>
+          <span style={{ color: "white" }}>
             Copyright &copy;{" "}
             <script>document.write(new Date().getFullYear())</script> pipevees.
           </span>
