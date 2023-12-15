@@ -2,7 +2,7 @@
 
 .Portfolio{
     img{
-        height:310px;
+        height:280px;
         border-radius:20px;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
@@ -119,12 +119,18 @@
                     
                     button{
                         font-size: 22px;
-                        background: $clay-color;
+                        background: $yellow2-color;
                         background-image: url(../../assets/img/background.png);
                         padding:15px 20px;
                         font-family: $title-font;
                         border: none;
                         border-radius: 12px;
+                        color: black;
+                        transition: transform 0.3s ease;
+
+                        &:hover {
+                        transform: scale(1.08);
+                        }
                     }
                 }
 
@@ -202,12 +208,18 @@
                     
                     button{
                         font-size: 22px;
-                        background: $clay-color;
+                        background: $yellow2-color;
                         background-image: url(../../assets/img/background.png);
                         padding:15px 20px;
                         font-family: $title-font;
                         border: none;
                         border-radius: 12px;
+                        color: black;
+                        transition: transform 0.3s ease;
+
+                        &:hover {
+                        transform: scale(1.08);
+                        }
                     }
                 }
                 &:hover &__capa{
@@ -267,12 +279,18 @@
                     
                     button{
                         font-size: 22px;
-                        background: $clay-color;
+                        background: $yellow2-color;
                         background-image: url(../../assets/img/background.png);
                         padding:15px 20px;
                         font-family: $title-font;
                         border: none;
                         border-radius: 12px;
+                        color: black;
+                        transition: transform 0.3s ease;
+
+                        &:hover {
+                        transform: scale(1.08);
+                        }
                     }
                     
                 }

@@ -57,7 +57,7 @@ export function WebPage() {
   const recipe = [recipe1, recipe2, recipe3, recipe4, recipe5, recipe6];
 
   return (
-    <>
+    <div className="web-page">
       <div className="d-flex justify-content-center ">
         <h1 style={{ fontSize: "45px" }}>
           {location.pathname === "/tecnocredito"
@@ -160,6 +160,6 @@ export function WebPage() {
       ) : (
         <></>
       )}
-    </>
+    </div>
   );
 }

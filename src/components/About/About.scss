@@ -51,7 +51,7 @@
       padding: 30px 20px;
       padding-bottom: 40px;
       align-items: center;
-      background:#276841;
+      background:$blue-color;
       background-image: url(../../assets/img/background.png);
       display: flex;
       height: 100%;
@@ -88,10 +88,14 @@
         width:700px;
         background-size: 332px auto;
         h1{
-            font-size: 50px;        }
+            font-size: 50px;  
+            color: black;      
+        }
         p{
             margin-top: 10px;
             font-size: 20px ;
+            color: black;
+            font-family: $text-font;
         }
 
         @media(max-width:768px){

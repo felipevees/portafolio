@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.scss";
 import person from "../../assets/img/persona.jpg";
-import wave2 from "../../assets/img/image3.png";
+import wave2 from "../../assets/img/image7.png";
 
 export function About() {
   return (

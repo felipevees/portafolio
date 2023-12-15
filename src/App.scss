@@ -1,15 +1,17 @@
 $background-color: #fef9f1;
-$blue-color:#3d405b;
+$blue-color:#2f615e;
 $clay-color:#e07a5f;
 $black-color:#231f20;
 $yellow-color:#f3d3a0;
-$green-color:#81b29a;
+$yellow2-color:#d07e0e;
+$green-color:#482c21;
+$green2-color:#a94808;
 $rose-color:#e3d4d0;
 $grey-color:#f7f1e7;
 $grey2-color:#f3ece6;
 
-$title-font:"Francois One", sans-serif;
-$text-font:"Montserrat";
+$title-font:"DM Serif Display", sans-serif; //Francois One
+$text-font:"Quattrocento", sans-serif; //Montserrat
 
 * {
     margin: 0;
@@ -73,3 +75,19 @@ $text-font:"Montserrat";
     }
   }
   }
+
+  // Web page css
+
+    .web-page{
+      margin: 50px;
+      h1{
+        margin-bottom: 30px;
+      }
+
+      @media(max-width:750px){
+        margin: 0 !important;
+        h1{
+          margin-bottom: 10px;
+        }
+      }
+    }
