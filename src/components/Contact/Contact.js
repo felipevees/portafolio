@@ -1,10 +1,10 @@
 import React from "react";
 import "./Contact.scss";
 
-import github from "../../assets/icons/github.png";
-import linkedin from "../../assets/icons/linkedin.png";
-import whatsapp from "../../assets/icons/whatsapp.png";
-import gmail from "../../assets/icons/gmail.png";
+import github from "../../assets/icons/github-lg.png";
+import linkedin from "../../assets/icons/linkedin-lg.png";
+import whatsapp from "../../assets/icons/whatsapp-lg.png";
+import gmail from "../../assets/icons/gmail-lg.png";
 
 export function Contact() {
   return (

@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;
     min-height: 300px;
-    background: $green2-color;
+    background: $black-color;
     background-image: url(../../assets/img/background.png);
 
     &__container{
@@ -15,7 +15,7 @@
     width: 100%;
 
     h1{
-    color: black;
+    color: $background-color;
     font-size: 35px;
     }
 
