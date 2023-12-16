@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import { MainLayout, WebPageLayout } from "./Layouts";
 import { Home, WebPage, Error404 } from "./pages";
 import { LanguageProvider } from "./context";
-import { FixedButton } from "./components/FixedButton/FixedButton";
 
 function App() {
   return (
@@ -51,7 +50,6 @@ function App() {
             }
           />
         </Routes>
-        <FixedButton />
       </LanguageProvider>
     </div>
   );

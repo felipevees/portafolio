@@ -11,7 +11,8 @@ export function Navbar() {
   const [isButtonVisible, setButtonVisibility] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  const { language } = useContext(LanguageContext);
+  const { language, setLanguageToEnglish, setLanguageToSpanish } =
+    useContext(LanguageContext);
 
   useEffect(() => {
     const handleResize = () => {
@@ -71,12 +72,22 @@ export function Navbar() {
       >
         <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="/#home">
+            <a
+              onClick={
+                language && language == "ES"
+                  ? setLanguageToEnglish
+                  : language == "EN"
+                  ? setLanguageToSpanish
+                  : console.log("Hola")
+              }
+              className="nav-link active"
+              aria-current="page"
+            >
               {language && language == "ES"
-                ? "Inicio"
+                ? "Ingles"
                 : language == "EN"
-                ? "Home"
-                : "Inicio"}
+                ? "Spanish"
+                : "Ingles"}
             </a>
           </li>
           <li className="nav-item">
