@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "../App.scss";
+import LanguageContext from "../context/LanguageContext";
 
 export function WebPageLayout({ children }) {
   const location = useLocation();
   const navigate = useNavigate();
+
+  const { language } = useContext(LanguageContext);
 
   const code = () => {
     if (location.pathname === "/recipeapp") {
@@ -39,7 +42,11 @@ export function WebPageLayout({ children }) {
       <div className="d-flex justify-content-between m-5">
         <div>
           <button onClick={code} type="button" className="btn">
-            Codigo
+            {language && language == "ES"
+              ? "Codigo"
+              : language == "EN"
+              ? "Code"
+              : "Codigo"}
           </button>
         </div>
 
@@ -49,7 +56,11 @@ export function WebPageLayout({ children }) {
             type="button"
             className="btn"
           >
-            Volver
+            {language && language == "ES"
+              ? "Volver"
+              : language == "EN"
+              ? "Return"
+              : "Volver"}
           </button>
         </div>
       </div>

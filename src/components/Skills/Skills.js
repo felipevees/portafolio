@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Skills.scss";
+import LanguageContext from "../../context/LanguageContext";
+
 import html from "../../assets/icons/html-vanilla.png";
 import scss from "../../assets/icons/scss.png";
 import react from "../../assets/icons/react-vanilla.png";
@@ -12,12 +14,19 @@ import git from "../../assets/icons/git.png";
 import javascript from "../../assets/icons/javascript.png";
 
 export function Skills() {
+  const { language } = useContext(LanguageContext);
   return (
     <div className="Skills" id="skills">
       <div className="Skills__container">
         <div className="Skills__content">
           <div>
-            <h1 style={{ fontSize: "45px", marginBottom: "20px" }}>Skills</h1>
+            <h1 style={{ fontSize: "45px", marginBottom: "20px" }}>
+              {language && language == "ES"
+                ? "Habilidades"
+                : language == "EN"
+                ? "Skills"
+                : "Habilidades"}
+            </h1>
           </div>
           <div className="Skills__skills">
             <div className="Skills__card">

@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Banner.scss";
 import reactLogo from "../../assets/icons/react.png";
 import django from "../../assets/icons/django.png";
 import html from "../../assets/icons/html.png";
 import css from "../../assets/icons/css.png";
+import LanguageContext from "../../context/LanguageContext";
 
 export function Banner() {
+  const { language } = useContext(LanguageContext);
   return (
     <div className="Banner" id="home">
       <div className="Banner__div">
@@ -14,7 +16,9 @@ export function Banner() {
           <br />
           Velasquez Escobar
         </h1>
-        <p>Web Developer</p>
+        <p>
+          {language && language == "EN" ? "Web Developer" : "Desarrollador Web"}
+        </p>
       </div>
       <div>
         <div className="container">

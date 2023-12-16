@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Contact.scss";
+import LanguageContext from "../../context/LanguageContext";
 
 import github from "../../assets/icons/github-lg.png";
 import linkedin from "../../assets/icons/linkedin-lg.png";
@@ -7,11 +8,18 @@ import whatsapp from "../../assets/icons/whatsapp-lg.png";
 import gmail from "../../assets/icons/gmail-lg.png";
 
 export function Contact() {
+  const { language } = useContext(LanguageContext);
   return (
     <div className="Contact text-center mb-5" id="contactar">
       <div className="Contact__container container">
         <div className="d-flex flex-column justify-content-center p-5">
-          <h1>Contactar</h1>
+          <h1>
+            {language && language == "ES"
+              ? "Contactar"
+              : language == "EN"
+              ? "Reach out"
+              : "Contactar"}
+          </h1>
         </div>
         <div className="Contact__container__links row mb-5">
           <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 mb-4">

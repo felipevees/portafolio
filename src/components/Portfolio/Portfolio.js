@@ -1,17 +1,28 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Portfolio.scss";
 import { useNavigate } from "react-router-dom";
+import LanguageContext from "../../context/LanguageContext";
+
 import tecnocredito from "../../assets/img/tecnocredito/home.PNG";
 import icard from "../../assets/img/icard/client/home.PNG";
 import recipe from "../../assets/img/recipe/home1.PNG";
 
 export function Portfolio() {
   const navigate = useNavigate();
+
+  const { language } = useContext(LanguageContext);
+
   return (
     <div className="Portfolio" id="portfolio">
       <div className="Portfolio__container">
         <div className="Portfolio__content">
-          <h1>Proyectos recientes</h1>
+          <h1>
+            {language && language == "ES"
+              ? "Proyectos recientes"
+              : language == "EN"
+              ? "Recent projects"
+              : "Proyectos recientes"}
+          </h1>
 
           <div className="Portfolio__content__box">
             <div className="Portfolio__content__box__card1">
@@ -21,7 +32,11 @@ export function Portfolio() {
                 <div className="Portfolio__content__box__card1__capa">
                   <h1>Tecnocredito</h1>
                   <button onClick={() => navigate("/tecnocredito")}>
-                    Detalles
+                    {language && language == "ES"
+                      ? "Detalles"
+                      : language == "EN"
+                      ? "Details"
+                      : "Detalles"}
                   </button>
                 </div>
               </figure>
@@ -34,7 +49,11 @@ export function Portfolio() {
                 <div className="Portfolio__content__box__card2__capa">
                   <h1>Recipe app</h1>
                   <button onClick={() => navigate("/recipeapp")}>
-                    Detalles
+                    {language && language == "ES"
+                      ? "Detalles"
+                      : language == "EN"
+                      ? "Details"
+                      : "Detalles"}
                   </button>
                 </div>
               </figure>
@@ -45,7 +64,13 @@ export function Portfolio() {
                 <img src={icard} alt="icard" />
                 <div className="Portfolio__content__box__card3__capa">
                   <h1>icard</h1>
-                  <button onClick={() => navigate("/icard")}>Detalles</button>
+                  <button onClick={() => navigate("/icard")}>
+                    {language && language == "ES"
+                      ? "Detalles"
+                      : language == "EN"
+                      ? "Details"
+                      : "Detalles"}
+                  </button>
                 </div>
               </figure>
             </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useLocation } from "react-router-dom";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
