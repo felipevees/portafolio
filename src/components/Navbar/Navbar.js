@@ -2,7 +2,8 @@ import React, { useState, useEffect, useContext } from "react";
 import "./Navbar.scss";
 import github from "../../assets/icons/github.png";
 import linkedin from "../../assets/icons/linkedin.png";
-import CV from "../../assets/files/CVESPAÑOL.pdf";
+import CVES from "../../assets/files/CVJFVE.pdf";
+import CVEN from "../../assets/files/CVJFVEEN.pdf";
 
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import LanguageContext from "../../context/LanguageContext";
@@ -48,7 +49,7 @@ export function Navbar() {
         <a href="https://www.linkedin.com/in/felipe-velasquez-escobar-a9a74123b/">
           <img src={linkedin} alt="linkedin" />
         </a>
-        <a href={CV} download>
+        <a href={CVEN} download>
           <h1 style={{ margin: "0", padding: "0" }}>CV</h1>
         </a>
         {isButtonVisible && (
@@ -74,54 +75,54 @@ export function Navbar() {
           <li className="nav-item">
             <a
               onClick={
-                language && language == "ES"
+                language && language === "ES"
                   ? setLanguageToEnglish
-                  : language == "EN"
+                  : language === "EN"
                   ? setLanguageToSpanish
                   : console.log("Hola")
               }
               className="nav-link active"
               aria-current="page"
             >
-              {language && language == "ES"
+              {language && language === "ES"
                 ? "Ingles"
-                : language == "EN"
+                : language === "EN"
                 ? "Spanish"
                 : "Ingles"}
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link active" href="/#about">
-              {language && language == "ES"
+              {language && language === "ES"
                 ? "Sobre mi"
-                : language == "EN"
+                : language === "EN"
                 ? "About me"
                 : "Sobre mi"}
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link active" href="/#skills">
-              {language && language == "ES"
+              {language && language === "ES"
                 ? "Habilidades"
-                : language == "EN"
+                : language === "EN"
                 ? "Skills"
                 : "Habilidades"}
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link active" href="/#portfolio">
-              {language && language == "ES"
+              {language && language === "ES"
                 ? "Portafolio"
-                : language == "EN"
+                : language === "EN"
                 ? "Portfolio"
                 : "Portafolio"}
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link active" href="/#contactar">
-              {language && language == "ES"
+              {language && language === "ES"
                 ? "Contactar"
-                : language == "EN"
+                : language === "EN"
                 ? "Reach out"
                 : "Contactar"}
             </a>
