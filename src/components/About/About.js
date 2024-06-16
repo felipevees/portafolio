@@ -15,14 +15,14 @@ export function About() {
       <div className="About__container">
         <div className="About__content">
           <div className="About__div1">
-            <h1>
+            <h1 className="fs-1 ">
               {language && language == "ES"
-                ? "Sobre mi"
+                ? "SOBRE MI"
                 : language == "EN"
-                ? "About me"
+                ? "ABOUT ME"
                 : "Sobre mi"}
             </h1>
-            <p>
+            <p className="fs-5">
               {language && language == "ES" ? ES : language == "EN" ? EN : ES}
             </p>
           </div>
@@ -38,6 +38,6 @@ export function About() {
 }
 
 const EN =
-  "I'm a junior developer who's passionate about technology and programming. I'm really good at building responsive and useful websites. I'm excited about working in a team where I can contribute my skills and learn new things, acquiring new skills to keep growing as a professional.";
+  "Frontend Developer with experience in JavaScript, React, Django, and REST API consumption. I have knowledge in developing responsive designs using tools like Sass, Bootstrap, Semantic UI, and MUI. I use Git and GitHub for efficient version control. I am currently focusing on strengthening my knowledge in Clean Architecture, Redux, and TypeScript. I am passionate about technology, programming and continuous learning.";
 const ES =
-  "Soy un programador junior apasionado por la tecnologia y la programación. Soy bueno creando paginas web responsivas y utiles. Me emociona trabajar en un equipo en el cual pueda aportar mis conocimientos y aprender nuevas cosas y habilidades para crecer como profesional.";
+  "Desarrollador Frontend con experiencia en JavaScript, React, Django y consumo de APIs REST. Poseo conocimientos en el desarrollo de diseños responsivos utilizando herramientas como Sass, Bootstrap, Semantic UI y MUI. Utilizo Git y GitHub para un control de versiones eficiente. Me estoy enfocando en fortalecer mis conocimientos en Clean Architecture, Redux y TypeScript. Me apasiona la tecnologia, la programacion y el aprendizaje constante.";

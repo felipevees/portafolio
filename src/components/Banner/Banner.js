@@ -17,7 +17,9 @@ export function Banner() {
           Velasquez Escobar
         </h1>
         <p>
-          {language && language == "EN" ? "Web Developer" : "Desarrollador Web"}
+          {language && language == "EN"
+            ? "Front-end Developer"
+            : "Desarrollador Front-end"}
         </p>
       </div>
       <div>

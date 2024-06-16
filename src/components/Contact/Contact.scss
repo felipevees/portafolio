@@ -1,51 +1,49 @@
 @import "../../App.scss";
 
-.Contact{
-    position:absolute;
+.Contact {
+    position: absolute;
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 300px;
     background: #343a00;
     background-image: url(../../assets/img/background.png);
 
-    &__container{
-    height: 100%;
-    width: 100%;
+    &__container {
+        height: 100%;
+        width: 100%;
 
-    h1{
-    color: $background-color;
-    font-size: 35px;
-    }
+        h1 {
+            color: $background-color;
+            font-size: 25px;
+        }
 
-    @media(max-width:440px){
-        h1{
-            font-size: 27px;
+        @media (max-width: 440px) {
+            h1 {
+                font-size: 22px;
+            }
         }
     }
-    }
-    @media(max-width:768px){
-        h1{
-            font-size: 30px;
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 18px;
         }
     }
-    
-
-   
 }
 
-.icon{
+.icon {
     transition: transform 0.2s ease !important;
-    height: 70px;
-    @media(max-width:576px){
-         height:50px;
+    height: 40px;
+
+    @media (max-width: 576px) {
+        height: 50px;
     }
 }
+
 .icon:hover {
     cursor: pointer;
-    transform: scale(1.05); 
-
+    transform: scale(1.05);
 }
 
 .row > * {
@@ -54,5 +52,4 @@
         width: 50% !important;
         max-width: 100%;
     }
-    
 }

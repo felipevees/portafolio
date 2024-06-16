@@ -6,6 +6,7 @@ import LanguageContext from "../../context/LanguageContext";
 import tecnocredito from "../../assets/img/tecnocredito/home.PNG";
 import icard from "../../assets/img/icard/client/home.PNG";
 import recipe from "../../assets/img/recipe/home1.PNG";
+import skaion from "../../assets/img/skaion/home.PNG";
 
 export function Portfolio() {
   const navigate = useNavigate();
@@ -28,13 +29,17 @@ export function Portfolio() {
             <div className="Portfolio__content__box__card1">
               <span>Tecnocredito</span>
               <figure>
-                <img src={tecnocredito} alt="tecnocredito" />
+                <img src={skaion} alt="tecnocredito" />
                 <div className="Portfolio__content__box__card1__capa">
-                  <h1>Tecnocredito</h1>
-                  <button onClick={() => navigate("/tecnocredito")}>
-                    {language && language == "ES"
+                  <h1>Skaion</h1>
+                  <button
+                    onClick={() =>
+                      window.open("https://www.skaion.co", "_blank")
+                    }
+                  >
+                    {language && language === "ES"
                       ? "Detalles"
-                      : language == "EN"
+                      : language === "EN"
                       ? "Details"
                       : "Detalles"}
                   </button>
@@ -45,10 +50,14 @@ export function Portfolio() {
             <div className="Portfolio__content__box__card2">
               <span>Recipe app</span>
               <figure>
-                <img src={recipe} alt="recipe" />
+                <img src={tecnocredito} alt="recipe" />
                 <div className="Portfolio__content__box__card2__capa">
-                  <h1>Recipe app</h1>
-                  <button onClick={() => navigate("/recipeapp")}>
+                  <h1>Tecnocredito</h1>
+                  <button
+                    onClick={() =>
+                      window.open("https://tecnocredito.net/", "_blank")
+                    }
+                  >
                     {language && language == "ES"
                       ? "Detalles"
                       : language == "EN"

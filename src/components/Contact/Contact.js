@@ -10,9 +10,9 @@ import gmail from "../../assets/icons/gmail-lg.png";
 export function Contact() {
   const { language } = useContext(LanguageContext);
   return (
-    <div className="Contact text-center mb-5" id="contactar">
+    <div className="Contact text-center" id="contactar">
       <div className="Contact__container container">
-        <div className="d-flex flex-column justify-content-center p-5">
+        <div className="d-flex flex-column justify-content-center pt-5">
           <h1>
             {language && language == "ES"
               ? "Contactar"
@@ -21,8 +21,8 @@ export function Contact() {
               : "Contactar"}
           </h1>
         </div>
-        <div className="Contact__container__links row mb-5">
-          <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 mb-4">
+        <div className="Contact__container__links row ">
+          <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 ">
             <figure>
               <a
                 href="https://wa.me/573172821594"
@@ -67,15 +67,16 @@ export function Contact() {
             </figure>
           </div>
         </div>
+        <footer class="mt-auto mb-4">
+          <div class="text-center">
+            <span style={{ color: "white" }}>
+              Copyright &copy;{" "}
+              <script>document.write(new Date().getFullYear())</script>{" "}
+              pipevees.
+            </span>
+          </div>
+        </footer>
       </div>
-      <footer class="mt-auto mb-4">
-        <div class="text-center">
-          <span style={{ color: "white" }}>
-            Copyright &copy;{" "}
-            <script>document.write(new Date().getFullYear())</script> pipevees.
-          </span>
-        </div>
-      </footer>
     </div>
   );
 }

@@ -12,6 +12,8 @@ import django from "../../assets/icons/django.png";
 import sql from "../../assets/icons/sql.png";
 import git from "../../assets/icons/git.png";
 import javascript from "../../assets/icons/javascript.png";
+import next from "../../assets/icons/next.jpg";
+import tailwind from "../../assets/icons/tailwind.png";
 
 export function Skills() {
   const { language } = useContext(LanguageContext);
@@ -39,10 +41,10 @@ export function Skills() {
             </div>
             <div className="Skills__card">
               <div className="Skills__card__image">
-                <img src={redux} alt="react" />
+                <img src={tailwind} alt="react" />
               </div>
               <div className="Skills__card__skill">
-                <h1>Redux</h1>
+                <h1>Tailwind</h1>
               </div>
             </div>
             <div className="Skills__card">
@@ -86,14 +88,7 @@ export function Skills() {
                 <h1>HTML</h1>
               </div>
             </div>
-            <div className="Skills__card">
-              <div className="Skills__card__image">
-                <img src={scss} alt="html" />
-              </div>
-              <div className="Skills__card__skill">
-                <h1>SASS</h1>
-              </div>
-            </div>
+
             <div className="Skills__card">
               <div className="Skills__card__image">
                 <img src={sql} alt="sql" />
@@ -116,6 +111,14 @@ export function Skills() {
               </div>
               <div className="Skills__card__skill">
                 <h1>Bootstrap</h1>
+              </div>
+            </div>
+            <div className="Skills__card">
+              <div className="Skills__card__image">
+                <img className="" src={next} alt="next" />
+              </div>
+              <div className="Skills__card__skill">
+                <h1>Next JS</h1>
               </div>
             </div>
           </div>
